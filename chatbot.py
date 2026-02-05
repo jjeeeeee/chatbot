@@ -14,8 +14,6 @@ WRITE_X_RATIO = 798 / 2256
 WRITE_Y_RATIO = 1351 / 1504
 # Device measurements
 screen_width, screen_height = pyautogui.size()
-
-
 # Create the client; GEMINI_API_KEY from environment
 client = Client()
 
@@ -51,7 +49,7 @@ def chatbot_loop():
     pyautogui.moveTo(screen_width * COPY_X_RATIO, screen_height * COPY_Y_RATIO, duration=0.2)
     pyautogui.click(clicks=3, interval=0.1)
     time.sleep(0.1)
-    pyautogui.hotkey("ctrl", "c")
+    pyautogui.hotkey('ctrl', 'c')
     time.sleep(0.1)
 
     # Read the message from the clipboard to the program
@@ -62,7 +60,7 @@ def chatbot_loop():
       # Update received message
       received_message_seen = text
 
-      # Clicking textbox in preparation to type a message
+      # Clicking textbox in preparation to send a message
       pyautogui.PAUSE = 0.1
       pyautogui.moveTo(screen_width * WRITE_X_RATIO, screen_height * WRITE_Y_RATIO, duration=0.2)
       pyautogui.click(clicks=1, interval=0.1)
@@ -77,7 +75,7 @@ def chatbot_loop():
         # Write the message out and send it
         pyperclip.copy(message_sent)
         time.sleep(0.1)
-        pyautogui.hotkey("ctrl", "v")
+        pyautogui.hotkey('ctrl', 'v')
         pyautogui.press('enter')
 
         # Wait a small amount of time between each burst message
