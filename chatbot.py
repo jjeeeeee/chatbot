@@ -69,7 +69,7 @@ def chatbot_loop():
       time.sleep(0.1)
 
       # Determine how many messages to send in a single burst (between 1 and 5)
-      burst_count = int(random.randint(1, 5))
+      burst_count = 1 #int(random.randint(1, 5))
       for _ in range(burst_count):
         # Determine the message to be sent
         message_sent = determine_message(text)
