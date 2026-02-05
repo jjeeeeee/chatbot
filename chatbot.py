@@ -75,7 +75,9 @@ def chatbot_loop():
         message_sent = determine_message(text)
 
         # Write the message out and send it
-        pyautogui.typewrite(message_sent)
+        pyperclip.copy(message_sent)
+        time.sleep(0.1)
+        pyautogui.hotkey("ctrl", "v")
         pyautogui.press('enter')
 
         # Wait a small amount of time between each burst message
