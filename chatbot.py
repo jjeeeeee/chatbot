@@ -1,6 +1,8 @@
 import pyautogui
 import pyperclip
 import time
+import random
+
 
 # Parameters for running the script
 CONVERSATION_DURATION = 60 * 60 * 4   # Currently 4 hours
@@ -16,6 +18,13 @@ screen_width, screen_height = pyautogui.size()
 
 def determine_message(text):
   return "This is an automated message. Please type another message."
+
+
+
+def get_response_delay():
+    # Normal distribution with mean 5 seconds, std. dev 2 seconds
+    delay = random.gauss(mu=5, sigma=2)
+    return max(1, delay)  # Ensuring at least 1 second
 
 
 def chatbot_loop():
@@ -51,15 +60,20 @@ def chatbot_loop():
       pyautogui.click(clicks=1, interval=0.1)
       time.sleep(0.1)
 
-      # Determine the message to be sent
-      message_sent = determine_message(text)
+      # Determine how many messages to send in a single burst (between 1 and 5)
+      burst_count = int(random.randint(1, 5))
+      for _ in range(burst_count):
+        # Determine the message to be sent
+        message_sent = determine_message(text)
 
-      # Write the message out and send it
-      pyautogui.typewrite(message_sent)
-      pyautogui.press('enter')
+        # Write the message out and send it
+        pyautogui.typewrite(message_sent)
+        pyautogui.press('enter')
 
-      # Wait for at least this amount of time after finishing your response
-      time.sleep(5)
+        # Wait a small amount of time between each burst message
+        time.sleep(3)
+      # Wait a random amount of time between each group of responses
+      time.sleep(get_response_delay())
     else:
       # There have been no changes since you last sent a message, just wait
       time.sleep(5)
