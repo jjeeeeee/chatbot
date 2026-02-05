@@ -2,7 +2,7 @@ import pyautogui
 import pyperclip
 import time
 import random
-
+from google.genai import Client
 
 # Parameters for running the script
 CONVERSATION_DURATION = 60 * 60 * 4   # Currently 4 hours
@@ -16,9 +16,17 @@ WRITE_Y_RATIO = 1351 / 1504
 screen_width, screen_height = pyautogui.size()
 
 
-def determine_message(text):
-  return "This is an automated message. Please type another message."
+# Create the client; GEMINI_API_KEY from environment
+client = Client()
 
+
+def determine_message(prompt):
+  # Make a request to the API
+  response = client.models.generate_content(
+    model="gemini-2.5-flash",
+    contents=[{"text": prompt}]
+  )
+  return response.text
 
 
 def get_response_delay():
