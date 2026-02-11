@@ -1,0 +1,25 @@
+{'Author': None, 'Delay': 2.134, 'Content': 'Hey, are you free right now?'}
+{'Author': '8:live:.cid.36611567b76774da', 'Delay': 5.821, 'Content': 'Yeah, what\'s up?'}
+{'Author': None, 'Delay': 3.492, 'Content': 'Just testing the replay script'}
+{'Author': None, 'Delay': 0.842, 'Content': 'Seeing how it handles multiple messages'}
+{'Author': '8:live:.cid.36611567b76774da', 'Delay': 7.304, 'Content': 'Looks good so far'}
+{'Author': '8:live:.cid.36611567b76774da', 'Delay': 0.611, 'Content': 'Any issues yet?'}
+{'Author': None, 'Delay': 12.876, 'Content': 'Not yet, delays seem accurate'}
+{'Author': None, 'Delay': 1.104, 'Content': 'UI polling helps a lot'}
+{'Author': '8:live:.cid.36611567b76774da', 'Delay': 9.558, 'Content': 'Nice'}
+{'Author': '8:live:.cid.36611567b76774da', 'Delay': 0.739, 'Content': 'That was the goal'}
+{'Author': None, 'Delay': 18.441, 'Content': 'Let me try a spam burst'}
+{'Author': None, 'Delay': 0.433, 'Content': 'spam test 1'}
+{'Author': None, 'Delay': 0.512, 'Content': 'spam test 2'}
+{'Author': None, 'Delay': 0.398, 'Content': 'spam test 3'}
+{'Author': None, 'Delay': 0.467, 'Content': 'spam test 4'}
+{'Author': '8:live:.cid.36611567b76774da', 'Delay': 21.902, 'Content': 'Received all of those'}
+{'Author': '8:live:.cid.36611567b76774da', 'Delay': 1.028, 'Content': 'No drops or reordering'}
+{'Author': None, 'Delay': 14.317, 'Content': 'Perfect'}
+{'Author': None, 'Delay': 2.667, 'Content': 'Next I’ll simulate lag'}
+{'Author': '8:live:.cid.36611567b76774da', 'Delay': 30.554, 'Content': 'Alright, waiting'}
+{'Author': None, 'Delay': 0.924, 'Content': 'lag spike message'}
+{'Author': None, 'Delay': 8.143, 'Content': 'another delayed one'}
+{'Author': '8:live:.cid.36611567b76774da', 'Delay': 4.886, 'Content': 'Got them eventually'}
+{'Author': '8:live:.cid.36611567b76774da', 'Delay': 1.331, 'Content': 'Polling really helps'}
+{'Author': None, 'Delay': 6.512, 'Content': 'Yeah, this is working exactly as planned'}

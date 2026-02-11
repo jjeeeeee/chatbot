@@ -1,91 +1,96 @@
 import pyautogui
 import pyperclip
 import time
-import random
-from google.genai import Client
+import ast
 
-# Parameters for running the script
-CONVERSATION_DURATION = 60 * 60 * 4   # Currently 4 hours
+# ================= CONFIG =================
 
-# Relative positions (measured on my device)
-COPY_X_RATIO = 798 / 2256
-COPY_Y_RATIO = 1251 / 1504
-WRITE_X_RATIO = 798 / 2256
-WRITE_Y_RATIO = 1351 / 1504
-# Device measurements
+CONVERSATION_FILE = 'parsed_conversation.txt'
+MY_AUTHOR = None   # CHANGE on the other device
+
+COPY_X_RATIO = 898 / 2256
+COPY_Y_RATIO = 1325 / 1504
+WRITE_X_RATIO = 898 / 2256
+WRITE_Y_RATIO = 1451 / 1504
+
+POLL_INTERVAL = 1.0      # seconds between UI checks
+MAX_WAIT_PER_MESSAGE = 300  # safety timeout
+
 screen_width, screen_height = pyautogui.size()
-# Create the client; GEMINI_API_KEY from environment
-client = Client()
+pyautogui.FAILSAFE = True
 
 
-def determine_message(prompt):
-  # Make a request to the API
-  response = client.models.generate_content(
-    model="gemini-2.5-flash",
-    contents=[{"text": prompt}]
-  )
-  return response.text
+# ================= HELPERS =================
+
+def load_conversation(path):
+    messages = []
+    with open(path, 'r', encoding='utf-8') as f:
+        for line in f.readlines():
+            if line.strip():
+                messages.append(ast.literal_eval(line))
+    return messages
 
 
-def get_response_delay():
-    # Normal distribution with mean 5 seconds, std. dev 2 seconds
-    delay = random.gauss(mu=5, sigma=2)
-    return max(1, delay)  # Ensuring at least 1 second
-
-
-def chatbot_loop():
-  # Keeping track of last message seen and last message sent
-  received_message_seen = ''
-  message_sent = ''
-
-  # Loop for specified amount of time
-  # TODO: Change from True to CONVERSATION_DURATION time
-  while True:
-    # Safety: move mouse to top-left to abort
-    pyautogui.FAILSAFE = True
-
-    # Move mouse to message location and copy to clipboard
-    pyautogui.PAUSE = 0.1
-    pyautogui.moveTo(screen_width * COPY_X_RATIO, screen_height * COPY_Y_RATIO, duration=0.2)
+def read_latest_message():
+    pyautogui.moveTo(screen_width * COPY_X_RATIO,
+                     screen_height * COPY_Y_RATIO,
+                     duration=0.2)
     pyautogui.click(clicks=3, interval=0.1)
     time.sleep(0.1)
     pyautogui.hotkey('ctrl', 'c')
     time.sleep(0.1)
+    return pyperclip.paste().strip()
 
-    # Read the message from the clipboard to the program
-    text = pyperclip.paste()
 
-    # Verifying that the copied message isn't the same one or one we sent
-    if text != received_message_seen and text != message_sent:
-      # Update received message
-      received_message_seen = text
+def send_message(message):
+    pyautogui.moveTo(screen_width * WRITE_X_RATIO,
+                     screen_height * WRITE_Y_RATIO,
+                     duration=0.2)
+    pyautogui.click()
+    time.sleep(0.1)
+    pyperclip.copy(message)
+    time.sleep(0.1)
+    pyautogui.hotkey('ctrl', 'v')
+    pyautogui.press('enter')
 
-      # Clicking textbox in preparation to send a message
-      pyautogui.PAUSE = 0.1
-      pyautogui.moveTo(screen_width * WRITE_X_RATIO, screen_height * WRITE_Y_RATIO, duration=0.2)
-      pyautogui.click(clicks=1, interval=0.1)
-      time.sleep(0.1)
 
-      # Determine how many messages to send in a single burst (between 1 and 5)
-      burst_count = 1 #int(random.randint(1, 5))
-      for _ in range(burst_count):
-        # Determine the message to be sent
-        message_sent = determine_message(text)
+def wait_for_expected_message(expected_text):
+  seen = read_latest_message()
+  print(f"Expected: {expected_text}, Received: {seen}")
+  if seen == expected_text:
+    return True
+  else:
+    return False
 
-        # Write the message out and send it
-        pyperclip.copy(message_sent)
-        time.sleep(0.1)
-        pyautogui.hotkey('ctrl', 'v')
-        pyautogui.press('enter')
 
-        # Wait a small amount of time between each burst message
-        time.sleep(3)
-      # Wait a random amount of time between each group of responses
-      time.sleep(get_response_delay())
-    else:
-      # There have been no changes since you last sent a message, just wait
-      time.sleep(5)
+def replay_conversation():
+    conversation = load_conversation(CONVERSATION_FILE)
+
+    i = 0
+    while i < len(conversation):
+        msg = conversation[i]
+        author = msg['Author']
+        delay = msg['Delay']
+        content = msg['Content']
+
+        if author == MY_AUTHOR:
+            # SEND STATE
+            print(f"[SEND] {content}")
+            send_message(content)
+            time.sleep(delay)
+            i += 1
+
+        else:
+            # WAIT STATE
+            msg_was_received = wait_for_expected_message(content)
+
+            if msg_was_received:
+                i += 1
+            else:
+                # Message hasn't been received yet, keep waiting
+                print(f"[WAITING] Haven't received expected message yet. Expecting: {content}")
+                time.sleep(5)
 
 
 if __name__ == '__main__':
-  chatbot_loop()
+    replay_conversation()

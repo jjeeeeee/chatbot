@@ -8,19 +8,21 @@ with open('example_conversation.json') as json_data:
   prev_timestamp = 0
   delay = 0
 
-  for message in reversed(d['conversations'][0]['MessageList']):
-    # Extract data from JSON
-    author = message['from']
-    timestamp = message['originalarrivaltime']
-    content = message['content']
+  with open("parsed_conversation.txt", 'w') as output_file:
+    for message in reversed(d['conversations'][0]['MessageList']):
+      # Extract data from JSON
+      author = message['from']
+      timestamp = message['originalarrivaltime']
+      content = message['content']
 
-    # Parse delays and clean up message output
-    timestamp = datetime.strptime(timestamp, "%Y-%m-%dT%H:%M:%S.%fZ").replace(tzinfo=timezone.utc)
-    if prev_timestamp != 0:
-      delay = (timestamp - prev_timestamp).total_seconds()
-    prev_timestamp = timestamp
-    content = content[3:-4]
+      # Parse delays and clean up message output
+      timestamp = datetime.strptime(timestamp, "%Y-%m-%dT%H:%M:%S.%fZ").replace(tzinfo=timezone.utc)
+      if prev_timestamp != 0:
+        delay = (timestamp - prev_timestamp).total_seconds()
+      prev_timestamp = timestamp
+      content = content[3:-4]
 
-    # Print to console for now
-    # TODO: Output to file instead in object format
-    print('Author:', author, 'Delay:', delay, 'Content:', content)
+      # Print to console for now
+      # TODO: Output to file instead in object format
+      print({'Author': author, 'Delay': delay, 'Content': content}, file=output_file)
+  output_file.close()
