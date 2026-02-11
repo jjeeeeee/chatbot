@@ -1,0 +1,361 @@
+{
+  "userId": "8:live:.cid.36611567b76774da",
+  "exportDate": "2026-02-09T23:04",
+  "conversations": [
+    {
+      "id": "19:4a99678527bf4479be43d916484dff54@thread.v2",
+      "displayName": "jasonjee53@outlook.com and Jason Jee",
+      "version": 1770678240309,
+      "properties": {
+        "conversationblocked": false,
+        "lastimreceivedtime": "2026-02-09T23:03:32.98Z",
+        "consumptionhorizon": "1770678212980;1770678228844;6657666663339166579",
+        "conversationstatus": null
+      },
+      "threadProperties": {
+        "membercount": 2,
+        "members": "[\"Unknown User\",\"Export Owner\"]",
+        "membersBlocked": null,
+        "membersNicknames": null,
+        "topic": "jasonjee53@outlook.com and Jason Jee",
+        "picture": null,
+        "description": null,
+        "guidelines": null,
+        "shareJoinLink": null,
+        "joiningEnabled": null,
+        "searchVisible": null,
+        "websiteText": null,
+        "websiteUrl": null,
+        "consumptionhorizons": {
+          "version": "1770678257419",
+          "consumptionhorizons": [
+            {
+              "id": "Unknown User",
+              "consumptionhorizon": "1770678212980;1770678213126;6657666663339166579"
+            },
+            {
+              "id": "Export Owner",
+              "consumptionhorizon": "1770678212980;1770678228844;6657666663339166579"
+            }
+          ]
+        }
+      },
+      "MessageList": [
+        {
+          "id": "1770678240158",
+          "displayName": null,
+          "originalarrivaltime": "2026-02-09T23:04:00.158Z",
+          "messagetype": "RichText/Html",
+          "version": 1770678240158,
+          "content": "<p>spam messages for test</p>",
+          "conversationid": "19:4a99678527bf4479be43d916484dff54@thread.v2",
+          "from": "8:live:.cid.36611567b76774da",
+          "properties": {
+            "cards": [],
+            "links": "[]",
+            "files": "[]",
+            "formatVariant": "TEAMS",
+            "languageStamp": "languages=en:100;fr:85;id:81;length:22;&detector=Bling"
+          },
+          "amsreferences": []
+        },
+        {
+          "id": "1770678239235",
+          "displayName": null,
+          "originalarrivaltime": "2026-02-09T23:03:59.235Z",
+          "messagetype": "RichText/Html",
+          "version": 1770678239235,
+          "content": "<p>spam messages for test</p>",
+          "conversationid": "19:4a99678527bf4479be43d916484dff54@thread.v2",
+          "from": "8:live:.cid.36611567b76774da",
+          "properties": {
+            "cards": [],
+            "links": "[]",
+            "files": "[]",
+            "formatVariant": "TEAMS",
+            "languageStamp": "languages=en:100;fr:85;id:81;length:22;&detector=Bling"
+          },
+          "amsreferences": []
+        },
+        {
+          "id": "1770678238283",
+          "displayName": null,
+          "originalarrivaltime": "2026-02-09T23:03:58.283Z",
+          "messagetype": "RichText/Html",
+          "version": 1770678238283,
+          "content": "<p>spam messages for test</p>",
+          "conversationid": "19:4a99678527bf4479be43d916484dff54@thread.v2",
+          "from": "8:live:.cid.36611567b76774da",
+          "properties": {
+            "cards": [],
+            "links": "[]",
+            "files": "[]",
+            "formatVariant": "TEAMS",
+            "languageStamp": "languages=en:100;fr:85;id:81;length:22;&detector=Bling"
+          },
+          "amsreferences": []
+        },
+        {
+          "id": "1770678237626",
+          "displayName": null,
+          "originalarrivaltime": "2026-02-09T23:03:57.626Z",
+          "messagetype": "RichText/Html",
+          "version": 1770678237626,
+          "content": "<p>spam messages for test</p>",
+          "conversationid": "19:4a99678527bf4479be43d916484dff54@thread.v2",
+          "from": "8:live:.cid.36611567b76774da",
+          "properties": {
+            "cards": [],
+            "links": "[]",
+            "files": "[]",
+            "formatVariant": "TEAMS",
+            "languageStamp": "languages=en:100;fr:85;id:81;length:22;&detector=Bling"
+          },
+          "amsreferences": []
+        },
+        {
+          "id": "1770678236700",
+          "displayName": null,
+          "originalarrivaltime": "2026-02-09T23:03:56.7Z",
+          "messagetype": "RichText/Html",
+          "version": 1770678236700,
+          "content": "<p>spam messages for test</p>",
+          "conversationid": "19:4a99678527bf4479be43d916484dff54@thread.v2",
+          "from": "8:live:.cid.36611567b76774da",
+          "properties": {
+            "cards": [],
+            "links": "[]",
+            "files": "[]",
+            "formatVariant": "TEAMS",
+            "languageStamp": "languages=en:100;fr:85;id:81;length:22;&detector=Bling"
+          },
+          "amsreferences": []
+        },
+        {
+          "id": "1770678236107",
+          "displayName": null,
+          "originalarrivaltime": "2026-02-09T23:03:56.107Z",
+          "messagetype": "RichText/Html",
+          "version": 1770678236107,
+          "content": "<p>spam messages for test</p>",
+          "conversationid": "19:4a99678527bf4479be43d916484dff54@thread.v2",
+          "from": "8:live:.cid.36611567b76774da",
+          "properties": {
+            "cards": [],
+            "links": "[]",
+            "files": "[]",
+            "formatVariant": "TEAMS",
+            "languageStamp": "languages=en:100;fr:85;id:81;length:22;&detector=Bling"
+          },
+          "amsreferences": []
+        },
+        {
+          "id": "1770678212980",
+          "displayName": null,
+          "originalarrivaltime": "2026-02-09T23:03:32.98Z",
+          "messagetype": "RichText/Html",
+          "version": 1770678212980,
+          "content": "<p>spam messages for test</p>",
+          "conversationid": "19:4a99678527bf4479be43d916484dff54@thread.v2",
+          "from": null,
+          "properties": {
+            "cards": [],
+            "links": "[]",
+            "files": "[]",
+            "formatVariant": "TEAMS",
+            "languageStamp": "languages=en:100;fr:85;id:81;length:22;&detector=Bling"
+          },
+          "amsreferences": []
+        },
+        {
+          "id": "1770678212276",
+          "displayName": null,
+          "originalarrivaltime": "2026-02-09T23:03:32.276Z",
+          "messagetype": "RichText/Html",
+          "version": 1770678212276,
+          "content": "<p>spam messages for test</p>",
+          "conversationid": "19:4a99678527bf4479be43d916484dff54@thread.v2",
+          "from": null,
+          "properties": {
+            "cards": [],
+            "links": "[]",
+            "files": "[]",
+            "formatVariant": "TEAMS",
+            "languageStamp": "languages=en:100;fr:85;id:81;length:22;&detector=Bling"
+          },
+          "amsreferences": []
+        },
+        {
+          "id": "1770678211821",
+          "displayName": null,
+          "originalarrivaltime": "2026-02-09T23:03:31.821Z",
+          "messagetype": "RichText/Html",
+          "version": 1770678211821,
+          "content": "<p>spam messages for test</p>",
+          "conversationid": "19:4a99678527bf4479be43d916484dff54@thread.v2",
+          "from": null,
+          "properties": {
+            "cards": [],
+            "links": "[]",
+            "files": "[]",
+            "formatVariant": "TEAMS",
+            "languageStamp": "languages=en:100;fr:85;id:81;length:22;&detector=Bling"
+          },
+          "amsreferences": []
+        },
+        {
+          "id": "1770678211127",
+          "displayName": null,
+          "originalarrivaltime": "2026-02-09T23:03:31.127Z",
+          "messagetype": "RichText/Html",
+          "version": 1770678211127,
+          "content": "<p>spam messages for test</p>",
+          "conversationid": "19:4a99678527bf4479be43d916484dff54@thread.v2",
+          "from": null,
+          "properties": {
+            "cards": [],
+            "links": "[]",
+            "files": "[]",
+            "formatVariant": "TEAMS",
+            "languageStamp": "languages=en:100;fr:85;id:81;length:22;&detector=Bling"
+          },
+          "amsreferences": []
+        },
+        {
+          "id": "1770678210280",
+          "displayName": null,
+          "originalarrivaltime": "2026-02-09T23:03:30.28Z",
+          "messagetype": "RichText/Html",
+          "version": 1770678210280,
+          "content": "<p>spam messages for test</p>",
+          "conversationid": "19:4a99678527bf4479be43d916484dff54@thread.v2",
+          "from": null,
+          "properties": {
+            "cards": [],
+            "links": "[]",
+            "files": "[]",
+            "formatVariant": "TEAMS",
+            "languageStamp": "languages=en:100;fr:85;id:81;length:22;&detector=Bling"
+          },
+          "amsreferences": []
+        },
+        {
+          "id": "1770678077025",
+          "displayName": null,
+          "originalarrivaltime": "2026-02-09T23:01:17.025Z",
+          "messagetype": "RichText/Html",
+          "version": 1770678077025,
+          "content": "<p>nice</p>",
+          "conversationid": "19:4a99678527bf4479be43d916484dff54@thread.v2",
+          "from": null,
+          "properties": {
+            "cards": [],
+            "links": "[]",
+            "files": "[]",
+            "formatVariant": "TEAMS",
+            "languageStamp": "languages=en:100;fr:94;nl:86;length:4;&detector=Bling"
+          },
+          "amsreferences": []
+        },
+        {
+          "id": "1770678072239",
+          "displayName": null,
+          "originalarrivaltime": "2026-02-09T23:01:12.239Z",
+          "messagetype": "RichText/Html",
+          "version": 1770678072239,
+          "content": "<p>Hello there</p>",
+          "conversationid": "19:4a99678527bf4479be43d916484dff54@thread.v2",
+          "from": "8:live:.cid.36611567b76774da",
+          "properties": {
+            "cards": [],
+            "links": "[]",
+            "files": "[]",
+            "formatVariant": "TEAMS",
+            "languageStamp": "languages=en:100;fil:78;de:77;length:11;&detector=Bling"
+          },
+          "amsreferences": []
+        },
+        {
+          "id": "1770678064294",
+          "displayName": null,
+          "originalarrivaltime": "2026-02-09T23:01:04.294Z",
+          "messagetype": "ThreadActivity/AddMember",
+          "version": 1770678064294,
+          "content": "<addmember><eventtime>1770678064294</eventtime><initiator>8:live:.cid.36611567b76774da</initiator><rosterVersion>1770678064136</rosterVersion><target>8:live:.cid.36611567b76774da</target><detailedtargetinfo><id>8:live:.cid.36611567b76774da</id><sharehistorytime>0</sharehistorytime></detailedtargetinfo></addmember>",
+          "conversationid": "19:4a99678527bf4479be43d916484dff54@thread.v2",
+          "from": null,
+          "properties": null,
+          "amsreferences": null
+        },
+        {
+          "id": "1770677967575",
+          "displayName": null,
+          "originalarrivaltime": "2026-02-09T22:59:27.575Z",
+          "messagetype": "RichText/Html",
+          "version": 1770677967575,
+          "content": "<p>Hello!</p>",
+          "conversationid": "19:4a99678527bf4479be43d916484dff54@thread.v2",
+          "from": null,
+          "properties": {
+            "cards": [],
+            "links": "[]",
+            "files": "[]",
+            "formatVariant": "TEAMS",
+            "languageStamp": "languages=en:100;fr:92;de:90;length:6;&detector=Bling"
+          },
+          "amsreferences": []
+        },
+        {
+          "id": "1770677963988",
+          "displayName": null,
+          "originalarrivaltime": "2026-02-09T22:59:23.988Z",
+          "messagetype": "ThreadActivity/ThreadShared",
+          "version": 1770677963988,
+          "content": "<threadshared><eventtime>1770677963708</eventtime><initiator>8:orgid:a388518d-7f6b-40aa-82b9-06bbd8160b21</initiator><invitees><byemail>1</byemail><bysms>0</bysms></invitees></threadshared>",
+          "conversationid": "19:4a99678527bf4479be43d916484dff54@thread.v2",
+          "from": null,
+          "properties": {
+            "s2spartnername": "inviteservice_enterprise"
+          },
+          "amsreferences": []
+        },
+        {
+          "id": "1770677959601",
+          "displayName": null,
+          "originalarrivaltime": "2026-02-09T22:59:19.601Z",
+          "messagetype": "ThreadActivity/JoiningEnabledUpdate",
+          "version": 1770677959601,
+          "content": "<joiningenabledupdate><eventtime>1770677959601</eventtime><initiator>8:orgid:a388518d-7f6b-40aa-82b9-06bbd8160b21</initiator><value>True</value></joiningenabledupdate>",
+          "conversationid": "19:4a99678527bf4479be43d916484dff54@thread.v2",
+          "from": null,
+          "properties": null,
+          "amsreferences": null
+        },
+        {
+          "id": "1770677959364",
+          "displayName": null,
+          "originalarrivaltime": "2026-02-09T22:59:19.364Z",
+          "messagetype": "ThreadActivity/TopicUpdate",
+          "version": 1770677959364,
+          "content": "<topicupdate><eventtime>1770677959364</eventtime><initiator>8:orgid:a388518d-7f6b-40aa-82b9-06bbd8160b21</initiator><value>jasonjee53@outlook.com and Jason Jee</value></topicupdate>",
+          "conversationid": "19:4a99678527bf4479be43d916484dff54@thread.v2",
+          "from": null,
+          "properties": null,
+          "amsreferences": null
+        },
+        {
+          "id": "1770677959335",
+          "displayName": null,
+          "originalarrivaltime": "2026-02-09T22:59:19.335Z",
+          "messagetype": "ThreadActivity/AddMember",
+          "version": 1770677959335,
+          "content": "<addmember><eventtime>1770677959334</eventtime><initiator>8:orgid:a388518d-7f6b-40aa-82b9-06bbd8160b21</initiator><rosterVersion>1770677959161</rosterVersion><target>8:orgid:a388518d-7f6b-40aa-82b9-06bbd8160b21</target><detailedtargetinfo><id>8:orgid:a388518d-7f6b-40aa-82b9-06bbd8160b21</id></detailedtargetinfo></addmember>",
+          "conversationid": "19:4a99678527bf4479be43d916484dff54@thread.v2",
+          "from": null,
+          "properties": null,
+          "amsreferences": null
+        }
+      ]
+    }
+  ]
+}
