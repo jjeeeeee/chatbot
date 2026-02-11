@@ -1,25 +1,52 @@
-{'Author': None, 'Delay': 2.134, 'Content': 'Hey, are you free right now?'}
-{'Author': '8:live:.cid.36611567b76774da', 'Delay': 5.821, 'Content': 'Yeah, what\'s up?'}
-{'Author': None, 'Delay': 3.492, 'Content': 'Just testing the replay script'}
-{'Author': None, 'Delay': 0.842, 'Content': 'Seeing how it handles multiple messages'}
-{'Author': '8:live:.cid.36611567b76774da', 'Delay': 7.304, 'Content': 'Looks good so far'}
-{'Author': '8:live:.cid.36611567b76774da', 'Delay': 0.611, 'Content': 'Any issues yet?'}
-{'Author': None, 'Delay': 12.876, 'Content': 'Not yet, delays seem accurate'}
-{'Author': None, 'Delay': 1.104, 'Content': 'UI polling helps a lot'}
-{'Author': '8:live:.cid.36611567b76774da', 'Delay': 9.558, 'Content': 'Nice'}
-{'Author': '8:live:.cid.36611567b76774da', 'Delay': 0.739, 'Content': 'That was the goal'}
-{'Author': None, 'Delay': 18.441, 'Content': 'Let me try a spam burst'}
-{'Author': None, 'Delay': 0.433, 'Content': 'spam test 1'}
-{'Author': None, 'Delay': 0.512, 'Content': 'spam test 2'}
-{'Author': None, 'Delay': 0.398, 'Content': 'spam test 3'}
-{'Author': None, 'Delay': 0.467, 'Content': 'spam test 4'}
-{'Author': '8:live:.cid.36611567b76774da', 'Delay': 21.902, 'Content': 'Received all of those'}
-{'Author': '8:live:.cid.36611567b76774da', 'Delay': 1.028, 'Content': 'No drops or reordering'}
-{'Author': None, 'Delay': 14.317, 'Content': 'Perfect'}
-{'Author': None, 'Delay': 2.667, 'Content': 'Next I’ll simulate lag'}
-{'Author': '8:live:.cid.36611567b76774da', 'Delay': 30.554, 'Content': 'Alright, waiting'}
-{'Author': None, 'Delay': 0.924, 'Content': 'lag spike message'}
-{'Author': None, 'Delay': 8.143, 'Content': 'another delayed one'}
-{'Author': '8:live:.cid.36611567b76774da', 'Delay': 4.886, 'Content': 'Got them eventually'}
-{'Author': '8:live:.cid.36611567b76774da', 'Delay': 1.331, 'Content': 'Polling really helps'}
-{'Author': None, 'Delay': 6.512, 'Content': 'Yeah, this is working exactly as planned'}
+{"Author": null, "Delay": 3.587, "Content": "Hello!"}
+{"Author": "8:live:.cid.36611567b76774da", "Delay": 7.945, "Content": "Hello there"}
+{"Author": null, "Delay": 4.786, "Content": "nice"}
+{"Author": null, "Delay": 133.255, "Content": "spam messages for test"}
+{"Author": null, "Delay": 0.847, "Content": "spam messages for test"}
+{"Author": null, "Delay": 1.149, "Content": "spam messages for test"}
+{"Author": null, "Delay": 0.704, "Content": "spam messages for test"}
+{"Author": "8:live:.cid.36611567b76774da", "Delay": 23.127, "Content": "spam messages for test"}
+{"Author": "8:live:.cid.36611567b76774da", "Delay": 0.593, "Content": "spam messages for test"}
+{"Author": "8:live:.cid.36611567b76774da", "Delay": 0.926, "Content": "spam messages for test"}
+{"Author": "8:live:.cid.36611567b76774da", "Delay": 0.657, "Content": "spam messages for test"}
+{"Author": "8:live:.cid.36611567b76774da", "Delay": 0.952, "Content": "spam messages for test"}
+{"Author": "8:live:.cid.36611567b76774da", "Delay": 0.923, "Content": "spam messages for test"}
+{"Author": null, "Delay": 104678.695, "Content": "Hello!"}
+{"Author": null, "Delay": 66.272, "Content": "Hello!"}
+{"Author": null, "Delay": -104773.304, "Content": "spam messages for test"}
+{"Author": "8:live:.cid.36611567b76774da", "Delay": 104992.993, "Content": "-------------"}
+{"Author": null, "Delay": 4.919, "Content": "Hello!"}
+{"Author": "8:live:.cid.36611567b76774da", "Delay": 7.643, "Content": "Hello there"}
+{"Author": null, "Delay": 54.709, "Content": "Hello"}
+{"Author": null, "Delay": 69.348, "Content": "Hello!"}
+{"Author": null, "Delay": 189.846, "Content": "Hello!"}
+{"Author": "8:live:.cid.36611567b76774da", "Delay": 19.047, "Content": "Hello there"}
+{"Author": null, "Delay": 12.675, "Content": "nice"}
+{"Author": null, "Delay": 5.536, "Content": "spam messages for test"}
+{"Author": null, "Delay": 11.126, "Content": "spam messages for test"}
+{"Author": null, "Delay": 1.699, "Content": "spam messages for test"}
+{"Author": null, "Delay": 1.7, "Content": "spam messages for test"}
+{"Author": null, "Delay": 1.194, "Content": "spam messages for test"}
+{"Author": "8:live:.cid.36611567b76774da", "Delay": 22.55, "Content": "spam messages for test"}
+{"Author": "8:live:.cid.36611567b76774da", "Delay": 0.465, "Content": "spam messages for test"}
+{"Author": "8:live:.cid.36611567b76774da", "Delay": 0.99, "Content": "spam messages for test"}
+{"Author": "8:live:.cid.36611567b76774da", "Delay": 0.606, "Content": "spam messages for test"}
+{"Author": "8:live:.cid.36611567b76774da", "Delay": 0.513, "Content": "spam messages for test"}
+{"Author": "8:live:.cid.36611567b76774da", "Delay": 0.822, "Content": "spam messages for test"}
+{"Author": null, "Delay": 290.459, "Content": "------------------------------"}
+{"Author": null, "Delay": 2.856, "Content": "Hey, are you free right now?"}
+{"Author": "8:live:.cid.36611567b76774da", "Delay": 20.293, "Content": "Yeah, what's up?"}
+{"Author": null, "Delay": 116.354, "Content": "Hey, are you free right now?"}
+{"Author": "8:live:.cid.36611567b76774da", "Delay": 12.435, "Content": "Yeah, what's up?"}
+{"Author": null, "Delay": 92.207, "Content": "Hey, are you free right now?"}
+{"Author": "8:live:.cid.36611567b76774da", "Delay": 24.044, "Content": "Yeah, what's up?"}
+{"Author": null, "Delay": 65.551, "Content": "Hey, are you free right now?"}
+{"Author": "8:live:.cid.36611567b76774da", "Delay": 17.363, "Content": "Yeah, what's up?"}
+{"Author": null, "Delay": 278.823, "Content": "Hey, are you free right now?"}
+{"Author": "8:live:.cid.36611567b76774da", "Delay": 9.282, "Content": "Yeah, what's up?"}
+{"Author": null, "Delay": 6.927, "Content": "Just testing the replay script"}
+{"Author": null, "Delay": 4.273, "Content": "Seeing how it handles multiple messages"}
+{"Author": "8:live:.cid.36611567b76774da", "Delay": 22.427, "Content": "Looks good so far"}
+{"Author": "8:live:.cid.36611567b76774da", "Delay": 21.613, "Content": "Any issues yet?"}
+{"Author": null, "Delay": 8.695, "Content": "Not yet, delays seem accurate"}
+{"Author": null, "Delay": 13.484, "Content": "UI polling helps a lot"}
