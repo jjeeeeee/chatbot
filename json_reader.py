@@ -1,7 +1,7 @@
 import json
 from datetime import datetime, timezone
 
-with open('example_conversation') as json_data:
+with open('example_conversation.json') as json_data:
   d = json.load(json_data)
   json_data.close()
 
