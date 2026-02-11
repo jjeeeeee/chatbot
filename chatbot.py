@@ -6,12 +6,18 @@ import ast
 # ================= CONFIG =================
 
 CONVERSATION_FILE = 'parsed_conversation.txt'
-MY_AUTHOR = '8:live:.cid.36611567b76774da'   # CHANGE on the other device
+MY_AUTHOR = '8:live:.cid.36611567b76774da'   # None on desktop
 
 COPY_X_RATIO = 865 / 2256
 COPY_Y_RATIO = 1245 / 1504
 WRITE_X_RATIO = 865 / 2256
 WRITE_Y_RATIO = 1345 / 1504
+
+# Desktop measurements
+# COPY_X_RATIO = 898 / 2256
+# COPY_Y_RATIO = 1325 / 1504
+# WRITE_X_RATIO = 898 / 2256
+# WRITE_Y_RATIO = 1451 / 1504
 
 POLL_INTERVAL = 1.0      # seconds between UI checks
 MAX_WAIT_PER_MESSAGE = 300  # safety timeout
