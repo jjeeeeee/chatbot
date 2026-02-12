@@ -9,6 +9,7 @@ import html
 CONVERSATION_FILE = 'parsed_conversation.txt'
 MY_AUTHOR = 'User 1'
 OTHER_AUTHOR = 'User 2'
+BREAK_AUTHOR = 'BreakMessage'
 
 # Desktop measurements
 COPY_X_RATIO = 898 / 2256
@@ -30,8 +31,8 @@ def consume_received_messages(conversation, start_index, seen_text):
     while i < len(conversation):
         msg = conversation[i]
 
-        # Stop if it's our turn
-        if msg['Author'] == MY_AUTHOR:
+        # Stop if it's our turn or when there is a break
+        if msg['Author'] == MY_AUTHOR or msg['Author'] == BREAK_AUTHOR:
             break
 
         if msg['Content'] is not None and html.unescape(msg['Content']) == seen_text:
