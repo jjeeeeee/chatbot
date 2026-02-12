@@ -33,7 +33,7 @@ def consume_received_messages(conversation, start_index, seen_text):
         if msg['Author'] == MY_AUTHOR:
             break
 
-        if msg['Content'] == seen_text:
+        if html.unescape(msg['Content']) == seen_text:
             return i + 1  # consume up to here
 
         i += 1
