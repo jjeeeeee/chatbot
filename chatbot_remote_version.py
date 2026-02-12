@@ -9,7 +9,7 @@ import html
 CONVERSATION_FILE = 'parsed_conversation.txt'
 MY_AUTHOR = '8:live:.cid.36611567b76774da'
 
-# Measurements for laptop
+# Measurements for remote workstation
 COPY_X_RATIO = 841 / 1920
 COPY_Y_RATIO = 902 / 1080
 WRITE_X_RATIO = 841 / 1920
