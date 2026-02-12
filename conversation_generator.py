@@ -18,7 +18,7 @@ FIRST_MESSAGE_CHARACTER = 'A'
 MAX_CONVERSATION_LENGTH = 60 * 60 * 4    # Default to 4-hour conversation
 FIRST_AUTHOR_NAME = "User 1"
 SECOND_AUTHOR_NAME = "User 2"
-CHARS = string.ascii_letters
+CHARS = string.ascii_letters + string.digits
 
 
 def generate_conversation():
@@ -40,8 +40,7 @@ def generate_conversation():
 
         for i in range(message_burst_count):
           content_length = r.randint(N1, N2)
-          content = CHARS[curr_letter_index % len(CHARS)] * content_length
-          curr_letter_index += 1
+          content = ''.join(r.choices(CHARS, k=content_length))
           delay = 0
           if not first_message:
             delay = r.randint(N3, N4)
