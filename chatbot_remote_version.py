@@ -31,11 +31,15 @@ def consume_received_messages(conversation, start_index, seen_text):
     while i < len(conversation):
         msg = conversation[i]
 
-        # Stop if it's our turn or when there is a break
-        if msg['Author'] == MY_AUTHOR or msg['Author'] == BREAK_AUTHOR:
+        # Stop if it's our turn
+        if msg['Author'] == MY_AUTHOR:
             break
 
-        if msg['Content'] is not None and html.unescape(msg['Content']) == seen_text:
+        # Go back if it's a break
+        if msg['Author'] == BREAK_AUTHOR:
+            return i - 1
+
+        if html.unescape(msg['Content']) == seen_text:
             return i + 1  # consume up to here
 
         i += 1
@@ -91,7 +95,13 @@ def replay_conversation():
         msg = conversation[i]
         author = msg['Author']
         delay = msg['Delay']
-        content = html.unescape(msg['Content'])
+        if msg['Content'] is not None:
+            content = html.unescape(msg['Content'])
+        else:
+            # Session over, take a break
+            print("[BREAK] Taking a break between sessions")
+            i += 1
+            time.sleep(delay)
 
         if author == MY_AUTHOR:
             # SEND STATE
@@ -113,11 +123,6 @@ def replay_conversation():
                     break
 
                 time.sleep(POLL_INTERVAL)
-
-        else:
-            # Session over, take a break
-            i += 1
-            time.sleep(delay)
 
 
 if __name__ == '__main__':
