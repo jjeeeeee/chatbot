@@ -1,76 +1,13 @@
-{"Author": null, "Delay": 3.587, "Content": "Hello!"}
-{"Author": "8:live:.cid.36611567b76774da", "Delay": 7.945, "Content": "Hello there"}
-{"Author": null, "Delay": 4.786, "Content": "nice"}
-{"Author": null, "Delay": 133.255, "Content": "spam messages for test"}
-{"Author": null, "Delay": 0.847, "Content": "spam messages for test"}
-{"Author": null, "Delay": 1.149, "Content": "spam messages for test"}
-{"Author": null, "Delay": 0.704, "Content": "spam messages for test"}
-{"Author": "8:live:.cid.36611567b76774da", "Delay": 23.127, "Content": "spam messages for test"}
-{"Author": "8:live:.cid.36611567b76774da", "Delay": 0.593, "Content": "spam messages for test"}
-{"Author": "8:live:.cid.36611567b76774da", "Delay": 0.926, "Content": "spam messages for test"}
-{"Author": "8:live:.cid.36611567b76774da", "Delay": 0.657, "Content": "spam messages for test"}
-{"Author": "8:live:.cid.36611567b76774da", "Delay": 0.952, "Content": "spam messages for test"}
-{"Author": "8:live:.cid.36611567b76774da", "Delay": 0.923, "Content": "spam messages for test"}
-{"Author": null, "Delay": 104678.695, "Content": "Hello!"}
-{"Author": null, "Delay": 66.272, "Content": "Hello!"}
-{"Author": null, "Delay": -104773.304, "Content": "spam messages for test"}
-{"Author": "8:live:.cid.36611567b76774da", "Delay": 104992.993, "Content": "-------------"}
-{"Author": null, "Delay": 4.919, "Content": "Hello!"}
-{"Author": "8:live:.cid.36611567b76774da", "Delay": 7.643, "Content": "Hello there"}
-{"Author": null, "Delay": 54.709, "Content": "Hello"}
-{"Author": null, "Delay": 69.348, "Content": "Hello!"}
-{"Author": null, "Delay": 189.846, "Content": "Hello!"}
-{"Author": "8:live:.cid.36611567b76774da", "Delay": 19.047, "Content": "Hello there"}
-{"Author": null, "Delay": 12.675, "Content": "nice"}
-{"Author": null, "Delay": 5.536, "Content": "spam messages for test"}
-{"Author": null, "Delay": 11.126, "Content": "spam messages for test"}
-{"Author": null, "Delay": 1.699, "Content": "spam messages for test"}
-{"Author": null, "Delay": 1.7, "Content": "spam messages for test"}
-{"Author": null, "Delay": 1.194, "Content": "spam messages for test"}
-{"Author": "8:live:.cid.36611567b76774da", "Delay": 22.55, "Content": "spam messages for test"}
-{"Author": "8:live:.cid.36611567b76774da", "Delay": 0.465, "Content": "spam messages for test"}
-{"Author": "8:live:.cid.36611567b76774da", "Delay": 0.99, "Content": "spam messages for test"}
-{"Author": "8:live:.cid.36611567b76774da", "Delay": 0.606, "Content": "spam messages for test"}
-{"Author": "8:live:.cid.36611567b76774da", "Delay": 0.513, "Content": "spam messages for test"}
-{"Author": "8:live:.cid.36611567b76774da", "Delay": 0.822, "Content": "spam messages for test"}
-{"Author": null, "Delay": 290.459, "Content": "------------------------------"}
-{"Author": null, "Delay": 2.856, "Content": "Hey, are you free right now?"}
-{"Author": "8:live:.cid.36611567b76774da", "Delay": 20.293, "Content": "Yeah, what's up?"}
-{"Author": null, "Delay": 116.354, "Content": "Hey, are you free right now?"}
-{"Author": "8:live:.cid.36611567b76774da", "Delay": 12.435, "Content": "Yeah, what's up?"}
-{"Author": null, "Delay": 92.207, "Content": "Hey, are you free right now?"}
-{"Author": "8:live:.cid.36611567b76774da", "Delay": 24.044, "Content": "Yeah, what's up?"}
-{"Author": null, "Delay": 65.551, "Content": "Hey, are you free right now?"}
-{"Author": "8:live:.cid.36611567b76774da", "Delay": 17.363, "Content": "Yeah, what's up?"}
-{"Author": null, "Delay": 278.823, "Content": "Hey, are you free right now?"}
-{"Author": "8:live:.cid.36611567b76774da", "Delay": 9.282, "Content": "Yeah, what's up?"}
-{"Author": null, "Delay": 6.927, "Content": "Just testing the replay script"}
-{"Author": null, "Delay": 4.273, "Content": "Seeing how it handles multiple messages"}
-{"Author": "8:live:.cid.36611567b76774da", "Delay": 22.427, "Content": "Looks good so far"}
-{"Author": "8:live:.cid.36611567b76774da", "Delay": 21.613, "Content": "Any issues yet?"}
-{"Author": null, "Delay": 8.695, "Content": "Not yet, delays seem accurate"}
-{"Author": null, "Delay": 13.484, "Content": "UI polling helps a lot"}
-{"Author": null, "Delay": 466.831, "Content": "Hey, are you free right now?"}
-{"Author": "8:live:.cid.36611567b76774da", "Delay": 380.152, "Content": "Yeah, what's up?"}
-{"Author": null, "Delay": 5.962, "Content": "Just testing the replay script"}
-{"Author": null, "Delay": 4.366, "Content": "Seeing how it handles multiple messages"}
-{"Author": null, "Delay": 1033.136, "Content": "Hey, are you free right now?"}
-{"Author": null, "Delay": 4.945, "Content": "Yeah, what's up?"}
-{"Author": null, "Delay": 2.999, "Content": "Just testing the replay script"}
-{"Author": null, "Delay": 4.524, "Content": "Seeing how it handles multiple messages"}
-{"Author": null, "Delay": 3.803, "Content": "Looks good so far"}
-{"Author": null, "Delay": 8.204, "Content": "Any issues yet?"}
-{"Author": null, "Delay": 4.226, "Content": "Not yet, delays seem accurate"}
-{"Author": null, "Delay": 55.243, "Content": "Hey, are you free right now?"}
+{"Author": null, "Delay": 1.0, "Content": "Hey, are you free right now?"}
 {"Author": "8:live:.cid.36611567b76774da", "Delay": 2.795, "Content": "Yeah, what's up?"}
 {"Author": null, "Delay": 3.333, "Content": "Just testing the replay script"}
 {"Author": null, "Delay": 4.342, "Content": "Seeing how it handles multiple messages"}
 {"Author": "8:live:.cid.36611567b76774da", "Delay": 3.687, "Content": "Looks good so far"}
-{"Author": "8:live:.cid.36611567b76774da", "Delay": 8.376, "Content": "Any issues yet?"}
+{"Author": "8:live:.cid.36611567b76774da", "Delay": 4.376, "Content": "Any issues yet?"}
 {"Author": null, "Delay": 4.186, "Content": "Not yet, delays seem accurate"}
-{"Author": null, "Delay": 13.824, "Content": "UI polling helps a lot"}
+{"Author": null, "Delay": 6.824, "Content": "UI polling helps a lot"}
 {"Author": "8:live:.cid.36611567b76774da", "Delay": 3.32, "Content": "Nice"}
-{"Author": "8:live:.cid.36611567b76774da", "Delay": 11.729, "Content": "That was the goal"}
+{"Author": "8:live:.cid.36611567b76774da", "Delay": 5.729, "Content": "That was the goal"}
 {"Author": null, "Delay": 3.483, "Content": "Let me try a spam burst"}
 {"Author": null, "Delay": 19.565, "Content": "spam test 1"}
 {"Author": null, "Delay": 1.317, "Content": "spam test 2"}
