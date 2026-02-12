@@ -16,7 +16,7 @@ COPY_Y_RATIO = 902 / 1080
 WRITE_X_RATIO = 841 / 1920
 WRITE_Y_RATIO = 979 / 1080
 
-POLL_INTERVAL = 0.25      # seconds between UI checks
+POLL_INTERVAL = 1      # seconds between UI checks
 
 screen_width, screen_height = pyautogui.size()
 pyautogui.FAILSAFE = True
@@ -34,7 +34,7 @@ def consume_received_messages(conversation, start_index, seen_text):
         if msg['Author'] == MY_AUTHOR:
             break
 
-        if html.unescape(msg['Content']) == seen_text:
+        if msg['Content'] is not None and html.unescape(msg['Content']) == seen_text:
             return i + 1  # consume up to here
 
         i += 1
@@ -115,6 +115,7 @@ def replay_conversation():
 
         else:
             # Session over, take a break
+            i += 1
             time.sleep(delay)
 
 
