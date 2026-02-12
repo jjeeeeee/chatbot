@@ -1,7 +1,7 @@
 import pyautogui
 import pyperclip
 import time
-import ast
+import json
 
 
 # ================= CONFIG =================
@@ -44,8 +44,7 @@ def load_conversation(path):
     messages = []
     with open(path, 'r', encoding='utf-8') as f:
         for line in f.readlines():
-            if line.strip():
-                messages.append(ast.literal_eval(line))
+            messages.append(json.loads(line))
     return messages
 
 
