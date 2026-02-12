@@ -7,7 +7,8 @@ import html
 
 # ================= CONFIG =================
 CONVERSATION_FILE = 'parsed_conversation.txt'
-MY_AUTHOR = '8:live:.cid.36611567b76774da'
+MY_AUTHOR = 'User 2'
+OTHER_AUTHOR = 'User 1'
 
 # Measurements for remote workstation
 COPY_X_RATIO = 841 / 1920
@@ -98,7 +99,7 @@ def replay_conversation():
             send_message(content)
             i += 1
 
-        else:
+        elif author == OTHER_AUTHOR:
             # WAIT STATE
             print("[WAIT] Waiting for other side...")
 
@@ -111,6 +112,10 @@ def replay_conversation():
                     break
 
                 time.sleep(POLL_INTERVAL)
+
+        else:
+            # Session over, take a break
+            time.sleep(delay)
 
 
 if __name__ == '__main__':
