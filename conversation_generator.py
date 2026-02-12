@@ -1,5 +1,6 @@
 import random as r
 import json
+import string
 
 
 # Parameters for conversation generation
@@ -13,14 +14,17 @@ N7 = 30         # Min gap between conversation sessions (in seconds)
 N8 = 60         # Max gap between conversation sessions (in seconds)
 N9 = 1          # Min number of messages in a message burst
 N10 = 5         # Max number of messages in a message burst
-MESSAGE_CHARACTER = 'A'
+FIRST_MESSAGE_CHARACTER = 'A'
 MAX_CONVERSATION_LENGTH = 60 * 30 # 60 * 4    # Default to 4-hour conversation
 FIRST_AUTHOR_NAME = "User 1"
 SECOND_AUTHOR_NAME = "User 2"
+CHARS = string.ascii_letters
 
 
 def generate_conversation():
   total_delay = 0
+  curr_letter_index = 0
+  first_message = True
   stop_generating = False
   author_flag = True
   conversation_remaining = MAX_CONVERSATION_LENGTH
@@ -36,8 +40,13 @@ def generate_conversation():
 
         for i in range(message_burst_count):
           content_length = r.randint(N1, N2)
-          content = MESSAGE_CHARACTER * content_length
-          delay = r.randint(N3, N4)
+          content = CHARS[curr_letter_index % len(CHARS)] * content_length
+          curr_letter_index += 1
+          delay = 0
+          if not first_message:
+            delay = r.randint(N3, N4)
+          else:
+            first_message = False
           total_delay += delay
 
           message = {
