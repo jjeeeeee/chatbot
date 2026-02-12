@@ -3,24 +3,18 @@ import pyperclip
 import time
 import ast
 
+
 # ================= CONFIG =================
-
 CONVERSATION_FILE = 'parsed_conversation.txt'
-MY_AUTHOR = '8:live:.cid.36611567b76774da'   # None on desktop
+MY_AUTHOR = '8:live:.cid.36611567b76774da'
 
+# Measurements for laptop
 COPY_X_RATIO = 865 / 2256
 COPY_Y_RATIO = 1245 / 1504
 WRITE_X_RATIO = 865 / 2256
 WRITE_Y_RATIO = 1345 / 1504
 
-# Desktop measurements
-# COPY_X_RATIO = 898 / 2256
-# COPY_Y_RATIO = 1325 / 1504
-# WRITE_X_RATIO = 898 / 2256
-# WRITE_Y_RATIO = 1451 / 1504
-
-POLL_INTERVAL = 1.0      # seconds between UI checks
-MAX_WAIT_PER_MESSAGE = 300  # safety timeout
+POLL_INTERVAL = 0.5      # seconds between UI checks
 
 screen_width, screen_height = pyautogui.size()
 pyautogui.FAILSAFE = True
@@ -28,10 +22,7 @@ pyautogui.FAILSAFE = True
 
 # ================= HELPERS =================
 def consume_received_messages(conversation, start_index, seen_text):
-    """
-    Advance index if seen_text matches any upcoming message
-    from the non-MY_AUTHOR side.
-    """
+    # Advance index if seen_text matches any upcoming message
     i = start_index
 
     while i < len(conversation):
@@ -47,7 +38,6 @@ def consume_received_messages(conversation, start_index, seen_text):
         i += 1
 
     return start_index
-
 
 
 def load_conversation(path):
@@ -112,7 +102,6 @@ def replay_conversation():
             # WAIT STATE
             print("[WAIT] Waiting for other side...")
 
-            start = time.time()
             while True:
                 seen = read_latest_message()
 
@@ -120,10 +109,6 @@ def replay_conversation():
                 if new_i != i:
                     i = new_i
                     break
-
-                if time.time() - start > MAX_WAIT_PER_MESSAGE:
-                    print("[WARN] Timeout, retrying")
-                    start = time.time()
 
                 time.sleep(POLL_INTERVAL)
 
