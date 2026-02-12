@@ -10,10 +10,10 @@ CONVERSATION_FILE = 'parsed_conversation.txt'
 MY_AUTHOR = '8:live:.cid.36611567b76774da'
 
 # Measurements for laptop
-COPY_X_RATIO = 865 / 2256
-COPY_Y_RATIO = 1245 / 1504
-WRITE_X_RATIO = 865 / 2256
-WRITE_Y_RATIO = 1345 / 1504
+COPY_X_RATIO = 841 / 1920
+COPY_Y_RATIO = 902 / 1080
+WRITE_X_RATIO = 841 / 1920
+WRITE_Y_RATIO = 979 / 1080
 
 POLL_INTERVAL = 0.25      # seconds between UI checks
 
