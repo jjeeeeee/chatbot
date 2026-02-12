@@ -2,6 +2,7 @@ import pyautogui
 import pyperclip
 import time
 import json
+import html
 
 
 # ================= CONFIG =================
@@ -14,7 +15,7 @@ COPY_Y_RATIO = 1325 / 1504
 WRITE_X_RATIO = 898 / 2256
 WRITE_Y_RATIO = 1451 / 1504
 
-POLL_INTERVAL = 0.5      # seconds between UI checks
+POLL_INTERVAL = 0.25      # seconds between UI checks
 
 screen_width, screen_height = pyautogui.size()
 pyautogui.FAILSAFE = True
@@ -88,13 +89,13 @@ def replay_conversation():
         msg = conversation[i]
         author = msg['Author']
         delay = msg['Delay']
-        content = msg['Content']
+        content = html.unescape(msg['Content'])
 
         if author == MY_AUTHOR:
             # SEND STATE
             print(f"[SEND] {content}")
-            send_message(content)
             time.sleep(delay)
+            send_message(content)
             i += 1
 
         else:
