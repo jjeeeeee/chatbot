@@ -16,7 +16,7 @@
 {"Author": "8:live:.cid.36611567b76774da", "Delay": 4.635, "Content": "Received all of those"}
 {"Author": "8:live:.cid.36611567b76774da", "Delay": 22.939, "Content": "No drops or reordering"}
 {"Author": null, "Delay": 2.925, "Content": "Perfect"}
-{"Author": null, "Delay": 15.07, "Content": "Next Iâ€™ll simulate lag"}
+{"Author": null, "Delay": 15.07, "Content": "Next I'll simulate lag"}
 {"Author": "8:live:.cid.36611567b76774da", "Delay": 3.877, "Content": "Alright, waiting"}
 {"Author": null, "Delay": 2.779, "Content": "lag spike message"}
 {"Author": null, "Delay": 1.783, "Content": "another delayed one"}
