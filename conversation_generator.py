@@ -22,7 +22,6 @@ CHARS = string.ascii_letters + string.digits
 
 
 def generate_conversation():
-  total_delay = 0
   first_message = True
   stop_generating = False
   author_flag = True
@@ -45,7 +44,6 @@ def generate_conversation():
             delay = r.randint(N3, N4)
           else:
             first_message = False
-          total_delay += delay
 
           message = {
             'Author': FIRST_AUTHOR_NAME if author_flag else SECOND_AUTHOR_NAME,
@@ -83,7 +81,6 @@ def generate_conversation():
       conversation_remaining -= conversation_session_break
       if conversation_remaining <= 0:
         break
-
 
 
 if __name__ == '__main__':
