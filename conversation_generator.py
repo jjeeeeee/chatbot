@@ -23,7 +23,6 @@ CHARS = string.ascii_letters + string.digits
 
 def generate_conversation():
   total_delay = 0
-  curr_letter_index = 0
   first_message = True
   stop_generating = False
   author_flag = True
@@ -80,6 +79,11 @@ def generate_conversation():
       }
       json.dump(message, output_file, ensure_ascii=False)
       output_file.write("\n")
+
+      conversation_remaining -= conversation_session_break
+      if conversation_remaining <= 0:
+        break
+
 
 
 if __name__ == '__main__':
