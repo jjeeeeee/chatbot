@@ -56,6 +56,11 @@ def load_conversation(path):
 
 
 def read_latest_message():
+    # Click New Messages button if it's there
+    pyautogui.moveTo(1564, 956, duration=0.2)
+    pyautogui.click(clicks=1, interval=0.1)
+    time.sleep(0.1)
+
     pyautogui.moveTo(screen_width * COPY_X_RATIO,
                      screen_height * COPY_Y_RATIO,
                      duration=0.2)
