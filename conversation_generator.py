@@ -14,7 +14,6 @@ N7 = 30         # Min gap between conversation sessions (in seconds)
 N8 = 60         # Max gap between conversation sessions (in seconds)
 N9 = 1          # Min number of messages in a message burst
 N10 = 5         # Max number of messages in a message burst
-FIRST_MESSAGE_CHARACTER = 'A'
 MAX_CONVERSATION_LENGTH = 60 * 60 * 4    # Default to 4-hour conversation
 FIRST_AUTHOR_NAME = "User 1"
 SECOND_AUTHOR_NAME = "User 2"
