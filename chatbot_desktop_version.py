@@ -11,15 +11,15 @@ MY_AUTHOR = 'User 1'
 OTHER_AUTHOR = 'User 2'
 BREAK_AUTHOR = 'BreakMessage'
 
-# Desktop measurements
-COPY_X_RATIO = 898 / 2256
-COPY_Y_RATIO = 1325 / 1504
-WRITE_X_RATIO = 898 / 2256
-WRITE_Y_RATIO = 1451 / 1504
+# Desktop measurements - YOU MUST CHANGE THESE IF USING A NEW DEVICE
+BUTTON_PRESS_X_COORD = 1564
+BUTTON_PRESS_Y_COORD = 956
+COPY_X_COORD = 898
+COPY_Y_COORD = 1325
+WRITE_X_COORD = 898
+WRITE_Y_COORD = 1451
 
 POLL_INTERVAL = 1      # seconds between UI checks
-
-screen_width, screen_height = pyautogui.size()
 pyautogui.FAILSAFE = True
 
 
@@ -57,13 +57,11 @@ def load_conversation(path):
 
 def read_latest_message():
     # Click New Messages button if it's there
-    pyautogui.moveTo(1564, 956, duration=0.2)
+    pyautogui.moveTo(BUTTON_PRESS_X_COORD, BUTTON_PRESS_Y_COORD, duration=0.2)
     pyautogui.click(clicks=1, interval=0.1)
     time.sleep(0.1)
 
-    pyautogui.moveTo(screen_width * COPY_X_RATIO,
-                     screen_height * COPY_Y_RATIO,
-                     duration=0.2)
+    pyautogui.moveTo(COPY_X_COORD, COPY_Y_COORD, duration=0.2)
     pyautogui.click(clicks=3, interval=0.1)
     time.sleep(0.1)
     pyautogui.hotkey('ctrl', 'c')
@@ -72,9 +70,7 @@ def read_latest_message():
 
 
 def send_message(message):
-    pyautogui.moveTo(screen_width * WRITE_X_RATIO,
-                     screen_height * WRITE_Y_RATIO,
-                     duration=0.2)
+    pyautogui.moveTo(WRITE_X_COORD, WRITE_Y_COORD, duration=0.2)
     pyautogui.click()
     time.sleep(0.1)
     pyperclip.copy(message)
