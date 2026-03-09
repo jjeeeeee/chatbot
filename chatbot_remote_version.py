@@ -14,10 +14,10 @@ BREAK_AUTHOR = 'BreakMessage'
 # Measurements for remote workstation - YOU SHOULD NOT NEED TO CHANGE THESE
 BUTTON_PRESS_X_COORD = 1574
 BUTTON_PRESS_Y_COORD = 840
-COPY_X_COORD = 841
-COPY_Y_COORD = 902
-WRITE_X_COORD = 841
-WRITE_Y_COORD = 979
+COPY_X_COORD = 805
+COPY_Y_COORD = 936
+WRITE_X_COORD = 805
+WRITE_Y_COORD = 913
 
 POLL_INTERVAL = 1      # seconds between UI checks
 pyautogui.FAILSAFE = True
@@ -70,7 +70,7 @@ def read_latest_message():
 
 
 def send_message(message):
-    pyautogui.moveTo(WRITE_X_COORD, WRITE_X_COORD, duration=0.2)
+    pyautogui.moveTo(WRITE_X_COORD, WRITE_Y_COORD, duration=0.2)
     pyautogui.click()
     time.sleep(0.1)
     pyperclip.copy(message)
